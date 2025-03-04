@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("nhap n so nguyen to dau tien: "));
+        let cnt=0;
+        let j=2;
+        while(cnt < num){
+        let check =1;
+        for(let i = 2; i<=Math.sqrt(j); i++){
+            if(j % i == 0){
+                check =0;
+                break;
+            }
+        }
+        if(check){
+            document.write(j + " ");
+            cnt++;
+        }
+        j++;
+}
+    </script>
+</body>
+</html>
